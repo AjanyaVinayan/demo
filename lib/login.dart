@@ -59,7 +59,7 @@ class _LoginState extends State<Login> {
                     padding: EdgeInsets.symmetric(horizontal: 30,vertical: 10),
                     child: Text('Login',style: TextStyle(fontSize: 20),)),
             style: TextButton.styleFrom(
-               primary: Colors.white,
+
               side: BorderSide(color: Colors.white,width: 2)
             ),
             ),

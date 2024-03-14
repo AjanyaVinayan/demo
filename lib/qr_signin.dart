@@ -26,9 +26,9 @@ class _QrState extends State<Qr> {
                     color: Colors.white,
                   ),
                 ),
-                QrImage(
+                QrImageView(
                   data: '1234567890',
-                  //version: QrVersions.auto,
+                  version: QrVersions.auto,
                   size: 200.0,
                 ),
               ],

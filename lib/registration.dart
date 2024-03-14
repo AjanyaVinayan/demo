@@ -90,7 +90,7 @@ class _RegState extends State<Reg> {
                   padding: EdgeInsets.symmetric(horizontal: 30,vertical: 10),
                   child: Text('Register',style: TextStyle(fontSize: 20),)),
               style: TextButton.styleFrom(
-                  primary: Colors.white,
+
                   side: BorderSide(color: Colors.white,width: 2)
               ),
             ),
