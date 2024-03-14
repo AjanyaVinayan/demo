@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qr_app/qr_signin.dart';
+import 'package:qr_app/registration.dart';
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -54,7 +56,9 @@ class _LoginState extends State<Login> {
               ),
             ),
             SizedBox(height: 30,),
-            TextButton(onPressed: (){},
+            TextButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>Qr()));
+            },
                 child:Container(
                     padding: EdgeInsets.symmetric(horizontal: 30,vertical: 10),
                     child: Text('Login',style: TextStyle(fontSize: 20),)),
@@ -64,8 +68,13 @@ class _LoginState extends State<Login> {
             ),
             ),
             SizedBox(height: 40,),
-            Text('dont have an account?register',
-              style: TextStyle(fontSize: 15,color:Colors.white)),
+            TextButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder:(context)=>Reg()));
+              },
+              child: Text('dont have an account?register',
+                style: TextStyle(fontSize: 15,color:Colors.white)),
+            ),
           ],
         ),
       ),
