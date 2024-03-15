@@ -5,6 +5,7 @@ import 'login.dart';
 import 'package:qr_app/registration.dart';
 import 'package:qr_app/registration.dart';
 import 'home.dart';
+import 'new.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +24,8 @@ class _MyAppState extends State<MyApp> {
      // home: Reg(),
       //home: Qr(),
      // home: Scan(),
-      home: Home(),
+      //home: Home(),
+      home: New(),
     );
   }
 }
