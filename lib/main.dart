@@ -21,11 +21,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home:Login()
-     // home: Reg(),
+      home: Reg(),
       //home: Qr(),
      // home: Scan(),
-      //home: Home(),
-      home: New(),
+     // home: Home(),
+      //home: New(),
     );
   }
 }
