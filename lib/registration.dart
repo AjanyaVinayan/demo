@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:qr_app/login.dart';
+import 'package:qr_app/qr_signin.dart';
 class Reg extends StatefulWidget {
   const Reg({Key? key}) : super(key: key);
 
@@ -127,7 +129,8 @@ class _RegState extends State<Reg> {
               ),
             ),
             SizedBox(height: 40,),
-            TextButton(onPressed: (){register();},
+            TextButton(onPressed: (){
+              register();},
               child:Container(
                   padding: EdgeInsets.symmetric(horizontal: 20,vertical: 5),
                   child: Text('Register',style: TextStyle(fontSize: 20,

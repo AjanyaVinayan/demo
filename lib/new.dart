@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_app/home.dart';
 class New extends StatefulWidget {
   const New({Key? key}) : super(key: key);
 
@@ -21,7 +22,7 @@ class _NewState extends State<New> {
               decoration: InputDecoration(
                 fillColor: Colors.white,
                 filled: true,
-                hintText: 'text',
+                hintText: 'Ente Here',
                 hintStyle: TextStyle(
                     color: Colors.black
                 ),
@@ -36,13 +37,14 @@ class _NewState extends State<New> {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 60,vertical: 10),
             child: TextButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>Home()));
             },
-              child: Text('submit',style: TextStyle(
+              child: Text('Next',style: TextStyle(
                   fontSize: 20,
                   color: Colors.white
               ),),
               style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(
+                  shape: StadiumBorder(
                       side: BorderSide(color: Colors.white)
                   )
               ),

@@ -20,8 +20,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //home:Login()
-      home: Reg(),
+      home:Login()
+      //home: Reg(),
       //home: Qr(),
      // home: Scan(),
      // home: Home(),
